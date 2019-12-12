@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:fuzz_factory_mod-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 3 5
 Title ""
 Date ""
 Rev ""
@@ -13,4 +14,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Sheet
+S 1500 1500 1000 500 
+U 5DF28E5E
+F0 "DAC" 50
+F1 "DAC.sch" 50
+F2 "IN_PWM_LSB" I L 1500 1600 50 
+F3 "IN_PWM_MSB" I L 1500 1800 50 
+F4 "IN_PWM_LSBn" I L 1500 1700 50 
+F5 "IN_PWM_MSBn" I L 1500 1900 50 
+F6 "OUT_DAC" I R 2500 1600 50 
+$EndSheet
 $EndSCHEMATC
