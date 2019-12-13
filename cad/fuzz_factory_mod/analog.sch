@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -285,11 +285,11 @@ Wire Wire Line
 Connection ~ 7000 3500
 Wire Wire Line
 	7000 3500 7000 3600
-Text HLabel 1500 7000 0    50   Input ~ 0
+Text HLabel 1500 6900 0    50   Input ~ 0
 GAIN_POT_1
-Text HLabel 1500 7100 0    50   Input ~ 0
+Text HLabel 1500 7000 0    50   Input ~ 0
 GAIN_POT_2
-Text HLabel 1500 7200 0    50   Input ~ 0
+Text HLabel 1500 7100 0    50   Input ~ 0
 GAIN_POT_3
 Connection ~ 7000 4000
 Wire Wire Line
@@ -634,11 +634,11 @@ Text Label 1600 6500 0    50   ~ 0
 COMP_POT_1
 Text Label 1600 6600 0    50   ~ 0
 COMP_POT_2
-Text Label 1600 7000 0    50   ~ 0
+Text Label 1600 6900 0    50   ~ 0
 GAIN_POT_1
-Text Label 1600 7100 0    50   ~ 0
+Text Label 1600 7000 0    50   ~ 0
 GAIN_POT_2
-Text Label 1600 7200 0    50   ~ 0
+Text Label 1600 7100 0    50   ~ 0
 GAIN_POT_3
 Wire Wire Line
 	1500 6000 2100 6000
@@ -649,11 +649,11 @@ Wire Wire Line
 Wire Wire Line
 	1500 6600 2100 6600
 Wire Wire Line
+	1500 6900 2100 6900
+Wire Wire Line
 	1500 7000 2100 7000
 Wire Wire Line
 	1500 7100 2100 7100
-Wire Wire Line
-	1500 7200 2100 7200
 Wire Wire Line
 	2000 3850 2000 4500
 Wire Wire Line
@@ -662,4 +662,74 @@ Wire Wire Line
 	2000 3500 2000 2900
 Wire Wire Line
 	3000 3500 3000 2900
+Text HLabel 1300 1600 0    50   Input ~ 0
+IN_PWM_LSB
+Text HLabel 1300 1700 0    50   Input ~ 0
+IN_PWM_LSBn
+Text HLabel 1300 1800 0    50   Input ~ 0
+IN_PWM_MSB
+Text HLabel 1300 1900 0    50   Input ~ 0
+IN_PWM_MSBn
+Wire Wire Line
+	1500 1600 1300 1600
+Wire Wire Line
+	1300 1700 1500 1700
+Wire Wire Line
+	1500 1800 1300 1800
+Wire Wire Line
+	1300 1900 1500 1900
+$Comp
+L power:+9V #PWR?
+U 1 1 5E01411F
+P 5750 1000
+F 0 "#PWR?" H 5750 850 50  0001 C CNN
+F 1 "+9V" H 5765 1173 50  0000 C CNN
+F 2 "" H 5750 1000 50  0001 C CNN
+F 3 "" H 5750 1000 50  0001 C CNN
+	1    5750 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E015714
+P 5750 1250
+F 0 "R?" H 5820 1296 50  0000 L CNN
+F 1 "0" H 5820 1205 50  0000 L CNN
+F 2 "" V 5680 1250 50  0001 C CNN
+F 3 "~" H 5750 1250 50  0001 C CNN
+	1    5750 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1400 5750 1500
+Connection ~ 5750 1500
+Wire Wire Line
+	5750 1100 5750 1000
+Text Label 5850 1700 0    50   ~ 0
+STARVE_POT_1
+Text Label 5850 2300 0    50   ~ 0
+STARVE_POT_2
+Text Label 1600 7500 0    50   ~ 0
+STARVE_POT_1
+Text Label 1600 7600 0    50   ~ 0
+STARVE_POT_2
+Text HLabel 1500 7500 0    50   Input ~ 0
+STARVE_POT_1
+Text HLabel 1500 7600 0    50   Input ~ 0
+STARVE_POT_2
+Wire Wire Line
+	1500 7500 2100 7500
+Wire Wire Line
+	1500 7600 2100 7600
+Text HLabel 8500 5500 2    50   Input ~ 0
+OUT_AUDIO
+Wire Wire Line
+	8000 5500 8500 5500
+Connection ~ 8000 5500
+$Sheet
+S 7150 800  950  600 
+U 5E0DD00B
+F0 "Digipot" 50
+F1 "DIGIPOT.sch" 50
+$EndSheet
 $EndSCHEMATC
