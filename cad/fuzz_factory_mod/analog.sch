@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 14
+Sheet 3 16
 Title ""
 Date ""
 Rev ""
@@ -376,4 +376,16 @@ Wire Wire Line
 	5500 2300 6200 2300
 Wire Wire Line
 	5500 2400 6200 2400
+$Sheet
+S 9500 2500 1000 1000
+U 5E66F94D
+F0 "ADC_frontend" 50
+F1 "ADC_frontend.sch" 50
+$EndSheet
+$Sheet
+S 9500 4000 1000 950 
+U 5E68EE8E
+F0 "peak_detect" 50
+F1 "peak_detect.sch" 50
+$EndSheet
 $EndSCHEMATC
