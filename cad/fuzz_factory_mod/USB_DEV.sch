@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 22
+Sheet 4 26
 Title ""
 Date ""
 Rev ""
@@ -166,7 +166,7 @@ AR Path="/5DE4AD26/5EB00B3E/5EB62ACF" Ref="U?"  Part="1"
 AR Path="/5DE4AD26/5EB591ED/5EB62ACF" Ref="U401"  Part="1" 
 F 0 "U401" V 4850 3500 50  0000 C CNN
 F 1 "USBLC6-2SC6" V 5550 3700 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4450 3650 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 4450 3650 50  0001 C CNN
 F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 5400 3600 50  0001 C CNN
 	1    5200 3250
 	0    1    1    0   

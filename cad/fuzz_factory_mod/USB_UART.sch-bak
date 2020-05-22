@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 22
+Sheet 3 26
 Title ""
 Date ""
 Rev ""
@@ -20,7 +20,7 @@ U 1 1 5EB01C76
 P 6050 3550
 F 0 "U302" H 5550 4150 50  0000 C CNN
 F 1 "FT230XS" H 6400 2950 50  0000 C CNN
-F 2 "Package_SO:SSOP-16_3.9x4.9mm_P0.635mm" H 6500 2900 50  0001 C CNN
+F 2 "Housings_SSOP:SSOP-16_3.9x4.9mm_Pitch0.635mm" H 6500 2900 50  0001 C CNN
 F 3 "http://www.ftdichip.com/Products/ICs/FT230X.html" H 6050 3550 50  0001 C CNN
 	1    6050 3550
 	1    0    0    -1  
@@ -370,7 +370,7 @@ U 1 1 5EB33269
 P 2850 3500
 F 0 "U301" V 2500 3750 50  0000 C CNN
 F 1 "USBLC6-2SC6" V 3200 3950 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2100 3900 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 2100 3900 50  0001 C CNN
 F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 3050 3850 50  0001 C CNN
 	1    2850 3500
 	0    1    1    0   

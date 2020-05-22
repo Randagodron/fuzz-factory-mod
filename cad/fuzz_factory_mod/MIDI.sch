@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 22 22
+Sheet 26 26
 Title ""
 Date ""
 Rev ""
@@ -42,7 +42,7 @@ U 1 1 5E67E292
 P 2800 3000
 F 0 "D2301" H 2800 3225 50  0000 C CNN
 F 1 "BAT54A" H 2800 3134 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2875 3125 50  0001 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 2875 3125 50  0001 L CNN
 F 3 "http://www.diodes.com/_files/datasheets/ds11005.pdf" H 2680 3000 50  0001 C CNN
 	1    2800 3000
 	1    0    0    -1  
@@ -53,7 +53,7 @@ U 1 1 5E67F50F
 P 3600 3300
 F 0 "U2301" H 3600 3625 50  0000 C CNN
 F 1 "4N25" H 3600 3534 50  0000 C CNN
-F 2 "Package_DIP:DIP-6_W7.62mm" H 3400 3100 50  0001 L CIN
+F 2 "Housings_DIP:DIP-6_W7.62mm" H 3400 3100 50  0001 L CIN
 F 3 "https://www.vishay.com/docs/83725/4n25.pdf" H 3600 3300 50  0001 L CNN
 	1    3600 3300
 	1    0    0    -1  
