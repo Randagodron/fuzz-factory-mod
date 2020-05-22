@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 26
+Sheet 2 30
 Title ""
 Date ""
 Rev ""
@@ -670,7 +670,7 @@ Wire Wire Line
 Wire Wire Line
 	6500 5450 5350 5450
 Text Label 3650 3250 2    50   ~ 0
-LED_BYPASS
+BYPASS_CMD
 Wire Wire Line
 	3750 3250 2500 3250
 Text Label 3650 3150 2    50   ~ 0
@@ -777,14 +777,8 @@ Text GLabel 6500 2950 2    50   Input ~ 0
 USB_DP
 Text GLabel 6500 3450 2    50   Input ~ 0
 SPI_FF_Gain_CS
-Text GLabel 2500 3150 0    50   Input ~ 0
-SW_BYPASS
 Text GLabel 2500 3250 0    50   Input ~ 0
-LED_BYPASS_CMD
-Text GLabel 2500 3450 0    50   Input ~ 0
-SW_PRESET_UP
-Text GLabel 2500 3550 0    50   Input ~ 0
-SW_PRESET_DOWN
+BYPASS_CMD
 Text GLabel 2500 3650 0    50   Input ~ 0
 VCA_IN_PWM
 Text GLabel 2500 3750 0    50   Input ~ 0
@@ -903,4 +897,95 @@ Wire Wire Line
 	10000 2900 9500 2900
 Wire Wire Line
 	10000 3000 9500 3000
+$Sheet
+S 10000 4250 1000 500 
+U 5ECAAB94
+F0 "MIDI" 50
+F1 "MIDI.sch" 50
+F2 "MIDI_IN" I L 10000 4350 50 
+F3 "MIDI_OUT" I L 10000 4650 50 
+$EndSheet
+Text Label 9900 4350 2    50   ~ 0
+UART5_RX
+Text Label 9900 4650 2    50   ~ 0
+UART5_TX
+Wire Wire Line
+	10000 4350 9500 4350
+Wire Wire Line
+	10000 4650 9500 4650
+$Sheet
+S 8300 4700 700  300 
+U 5ED0E0D0
+F0 "btn_bypass" 50
+F1 "push_button.sch" 50
+F2 "BTN" I L 8300 4900 50 
+F3 "VCC" I L 8300 4800 50 
+$EndSheet
+$Comp
+L power:+3.3V #PWR0229
+U 1 1 5ED10A5A
+P 8200 4800
+F 0 "#PWR0229" H 8200 4650 50  0001 C CNN
+F 1 "+3.3V" V 8215 4928 50  0000 L CNN
+F 2 "" H 8200 4800 50  0001 C CNN
+F 3 "" H 8200 4800 50  0001 C CNN
+	1    8200 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8300 4800 8200 4800
+Text Label 8200 4900 2    50   ~ 0
+SW_BYPASS
+Wire Wire Line
+	8300 4900 7800 4900
+Text Label 8200 5400 2    50   ~ 0
+SW_PRESET_UP
+$Sheet
+S 8300 5200 700  300 
+U 5ED20AFC
+F0 "btn_preset_up" 50
+F1 "push_button.sch" 50
+F2 "BTN" I L 8300 5400 50 
+F3 "VCC" I L 8300 5300 50 
+$EndSheet
+$Sheet
+S 8300 5700 700  300 
+U 5ED214FE
+F0 "btn_preset_down" 50
+F1 "push_button.sch" 50
+F2 "BTN" I L 8300 5900 50 
+F3 "VCC" I L 8300 5800 50 
+$EndSheet
+Text Label 8200 5900 2    50   ~ 0
+SW_PRESET_DOWN
+Wire Wire Line
+	8300 5400 7500 5400
+Wire Wire Line
+	8300 5900 7500 5900
+$Comp
+L power:+3.3V #PWR0230
+U 1 1 5ED48B6A
+P 8200 5300
+F 0 "#PWR0230" H 8200 5150 50  0001 C CNN
+F 1 "+3.3V" V 8215 5428 50  0000 L CNN
+F 2 "" H 8200 5300 50  0001 C CNN
+F 3 "" H 8200 5300 50  0001 C CNN
+	1    8200 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0231
+U 1 1 5ED48FD7
+P 8200 5800
+F 0 "#PWR0231" H 8200 5650 50  0001 C CNN
+F 1 "+3.3V" V 8215 5928 50  0000 L CNN
+F 2 "" H 8200 5800 50  0001 C CNN
+F 3 "" H 8200 5800 50  0001 C CNN
+	1    8200 5800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8300 5800 8200 5800
+Wire Wire Line
+	8300 5300 8200 5300
 $EndSCHEMATC

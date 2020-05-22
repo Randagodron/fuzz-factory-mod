@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 26
+Sheet 1 30
 Title ""
 Date ""
 Rev ""
@@ -204,14 +204,6 @@ Wire Wire Line
 	900  6700 900  6800
 Wire Wire Line
 	900  6800 1000 6800
-$Sheet
-S 1000 4500 1000 500 
-U 5E67C282
-F0 "MIDI" 50
-F1 "MIDI.sch" 50
-F2 "MIDI_IN" I R 2000 4600 50 
-F3 "MIDI_OUT" I R 2000 4900 50 
-$EndSheet
 $Comp
 L power:+3.3V #PWR0104
 U 1 1 5E936014
@@ -223,4 +215,8 @@ F 3 "" H 2100 6700 50  0001 C CNN
 	1    2100 6700
 	1    0    0    -1  
 $EndComp
+Text GLabel 3900 6900 0    50   Input ~ 0
+BYPASS_CMD
+Wire Wire Line
+	4000 6900 3900 6900
 $EndSCHEMATC
