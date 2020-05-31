@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 30
+Sheet 17 30
 Title ""
 Date ""
 Rev ""
@@ -718,4 +718,24 @@ F3 "AN_MCU_1" I R 10000 1050 50
 F4 "AN_IN_2" I L 8900 1150 50 
 F5 "AN_MCU_2" I R 10000 1150 50 
 $EndSheet
+Text GLabel 10100 1050 2    50   Input ~ 0
+ADC_FF_pol1
+Text GLabel 10100 1150 2    50   Input ~ 0
+ADC_FF_pol2
+Wire Wire Line
+	10000 1050 10100 1050
+Wire Wire Line
+	10100 1150 10000 1150
+Text Label 4150 4000 1    50   ~ 0
+POL_MEAS_1
+Text Label 8800 1050 2    50   ~ 0
+POL_MEAS_1
+Wire Wire Line
+	8900 1050 8250 1050
+Text Label 4750 4000 1    50   ~ 0
+POL_MEAS_2
+Text Label 8800 1150 2    50   ~ 0
+POL_MEAS_2
+Wire Wire Line
+	8900 1150 8250 1150
 $EndSCHEMATC

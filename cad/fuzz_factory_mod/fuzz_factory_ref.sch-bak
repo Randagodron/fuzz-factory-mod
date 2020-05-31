@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 15 30
+Sheet 23 30
 Title ""
 Date ""
 Rev ""
@@ -733,4 +733,34 @@ F 3 "http://www.onsemi.com/pub_link/Collateral/BC846BDW1T1-D.PDF" H 3650 4500 50
 $EndComp
 Wire Wire Line
 	3350 4500 3450 4500
+$Sheet
+S 8500 1000 1000 250 
+U 5ED2AE35
+F0 "ADC_frontend_2" 50
+F1 "ADC_frontend.sch" 50
+F2 "AN_IN_1" I L 8500 1050 50 
+F3 "AN_MCU_1" I R 9500 1050 50 
+F4 "AN_IN_2" I L 8500 1150 50 
+F5 "AN_MCU_2" I R 9500 1150 50 
+$EndSheet
+Text Label 3650 4000 1    50   ~ 0
+POL_MEAS_1
+Text Label 8400 1050 2    50   ~ 0
+POL_MEAS_1
+Text Label 8400 1150 2    50   ~ 0
+POL_MEAS_2
+Text Label 4250 4000 1    50   ~ 0
+POL_MEAS_2
+Wire Wire Line
+	8500 1050 7900 1050
+Wire Wire Line
+	8500 1150 7900 1150
+Text GLabel 9600 1050 2    50   Input ~ 0
+ADC_FF_REF_pol1
+Text GLabel 9600 1150 2    50   Input ~ 0
+ADC_FF_REF_pol2
+Wire Wire Line
+	9600 1050 9500 1050
+Wire Wire Line
+	9500 1150 9600 1150
 $EndSCHEMATC

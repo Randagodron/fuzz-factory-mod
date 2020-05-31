@@ -719,12 +719,4 @@ Wire Wire Line
 	2650 5500 2650 5400
 Wire Wire Line
 	2650 5900 2500 5900
-$Sheet
-S 8500 4000 700  400 
-U 5ECFA2FF
-F0 "btn" 50
-F1 "push_button.sch" 50
-F2 "BTN" I L 8500 4300 50 
-F3 "VCC" I L 8500 4100 50 
-$EndSheet
 $EndSCHEMATC

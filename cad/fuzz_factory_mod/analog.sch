@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 30
+Sheet 13 30
 Title ""
 Date ""
 Rev ""
@@ -17,7 +17,7 @@ $EndDescr
 $Sheet
 S 2000 1000 1000 500 
 U 5DF28E5E
-F0 "DAC1" 50
+F0 "DAC" 50
 F1 "DAC.sch" 50
 F2 "IN_PWM_LSB" I L 2000 1100 50 
 F3 "IN_PWM_MSB" I L 2000 1300 50 
@@ -26,31 +26,17 @@ F5 "IN_PWM_MSBn" I L 2000 1400 50
 F6 "OUT_DAC" I R 3000 1100 50 
 $EndSheet
 Text Label 5400 2750 2    50   ~ 0
-DAC_CMD_1
+DAC_CMD
 Text Label 3050 1100 0    50   ~ 0
-DAC_CMD_1
+DAC_CMD
 Wire Wire Line
 	3000 1100 3500 1100
-Text HLabel 1500 6900 0    50   Input ~ 0
-GAIN_POT_1
-Text HLabel 1500 7000 0    50   Input ~ 0
-GAIN_POT_2
-Text HLabel 1500 7100 0    50   Input ~ 0
-GAIN_POT_3
-Text HLabel 1500 6500 0    50   Input ~ 0
-COMP_POT_1
-Text HLabel 1500 6600 0    50   Input ~ 0
-COMP_POT_2
 Text HLabel 7100 2350 2    50   Input ~ 0
 VOLUME_POT_1
 Text HLabel 7100 2450 2    50   Input ~ 0
 VOLUME_POT_2
 Text HLabel 7100 2550 2    50   Input ~ 0
 VOLUME_POT_3
-Text HLabel 1500 6000 0    50   Input ~ 0
-GATE_POT_1
-Text HLabel 1500 6100 0    50   Input ~ 0
-GATE_POT_2
 $Comp
 L Device:R_POT_TRIM RV501
 U 1 1 5DF4B057
@@ -115,34 +101,6 @@ Text Label 3000 6400 1    50   ~ 0
 GATE_POT_1
 Text Label 3000 6950 3    50   ~ 0
 GATE_POT_2
-Text Label 1600 6000 0    50   ~ 0
-GATE_POT_1
-Text Label 1600 6100 0    50   ~ 0
-GATE_POT_2
-Text Label 1600 6500 0    50   ~ 0
-COMP_POT_1
-Text Label 1600 6600 0    50   ~ 0
-COMP_POT_2
-Text Label 1600 6900 0    50   ~ 0
-GAIN_POT_1
-Text Label 1600 7000 0    50   ~ 0
-GAIN_POT_2
-Text Label 1600 7100 0    50   ~ 0
-GAIN_POT_3
-Wire Wire Line
-	1500 6000 2100 6000
-Wire Wire Line
-	1500 6100 2100 6100
-Wire Wire Line
-	1500 6500 2100 6500
-Wire Wire Line
-	1500 6600 2100 6600
-Wire Wire Line
-	1500 6900 2100 6900
-Wire Wire Line
-	1500 7000 2100 7000
-Wire Wire Line
-	1500 7100 2100 7100
 Wire Wire Line
 	2500 6850 2500 7500
 Wire Wire Line
@@ -151,18 +109,6 @@ Wire Wire Line
 	2500 6500 2500 5900
 Wire Wire Line
 	3000 6500 3000 5900
-Text Label 1600 7500 0    50   ~ 0
-STARVE_POT_1
-Text Label 1600 7600 0    50   ~ 0
-STARVE_POT_2
-Text HLabel 1500 7500 0    50   Input ~ 0
-STARVE_POT_1
-Text HLabel 1500 7600 0    50   Input ~ 0
-STARVE_POT_2
-Wire Wire Line
-	1500 7500 2100 7500
-Wire Wire Line
-	1500 7600 2100 7600
 $Sheet
 S 8200 700  1500 800 
 U 5E0DD00B
@@ -279,7 +225,7 @@ Wire Wire Line
 $Sheet
 S 2000 2500 1000 500 
 U 5E344810
-F0 "VCA" 50
+F0 "VCA_IN" 50
 F1 "VCA.sch" 50
 F2 "CV" I L 2000 2800 50 
 F3 "Input" I L 2000 2700 50 
@@ -351,7 +297,7 @@ $EndSheet
 $Sheet
 S 9000 2000 1000 500 
 U 5E6FC466
-F0 "VCA2" 50
+F0 "VCA_OUT" 50
 F1 "VCA.sch" 50
 F2 "CV" I L 9000 2300 50 
 F3 "Input" I L 9000 2200 50 
@@ -415,7 +361,7 @@ Wire Wire Line
 $Sheet
 S 2000 1750 1000 500 
 U 5ED499CE
-F0 "DAC2" 50
+F0 "DAC_REF" 50
 F1 "DAC.sch" 50
 F2 "IN_PWM_LSB" I L 2000 1850 50 
 F3 "IN_PWM_MSB" I L 2000 2050 50 
@@ -424,7 +370,7 @@ F5 "IN_PWM_MSBn" I L 2000 2150 50
 F6 "OUT_DAC" I R 3000 1850 50 
 $EndSheet
 Text Label 3050 1850 0    50   ~ 0
-DAC_CMD_2
+DAC_CMD_REF
 Wire Wire Line
 	3000 1850 3500 1850
 Text GLabel 1900 1100 0    50   Input ~ 0
@@ -448,7 +394,7 @@ Wire Wire Line
 NoConn ~ 2000 1950
 NoConn ~ 2000 2150
 Text Label 5400 4500 2    50   ~ 0
-DAC_CMD_2
+DAC_CMD_REF
 Wire Wire Line
 	5500 4500 5000 4500
 Text GLabel 7700 900  0    50   Input ~ 0
@@ -808,4 +754,10 @@ Wire Wire Line
 	10000 5300 10700 5300
 NoConn ~ 10000 5100
 NoConn ~ 9000 5100
+Text GLabel 10700 4350 2    50   Input ~ 0
+INPUT_CAPTURE_1
+Text GLabel 10700 4550 2    50   Input ~ 0
+INPUT_CAPTURE_2
+Text GLabel 10700 5300 2    50   Input ~ 0
+INPUT_CAPTURE_3
 $EndSCHEMATC
