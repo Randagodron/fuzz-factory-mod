@@ -756,9 +756,9 @@ Wire Wire Line
 Wire Wire Line
 	8500 1150 7900 1150
 Text GLabel 9600 1050 2    50   Input ~ 0
-ADC_FF_REF_pol1
+ADC_REF_pol1
 Text GLabel 9600 1150 2    50   Input ~ 0
-ADC_FF_REF_pol2
+ADC_REF_pol2
 Wire Wire Line
 	9600 1050 9500 1050
 Wire Wire Line
