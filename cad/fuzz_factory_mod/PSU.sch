@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 30 30
+Sheet 22 22
 Title ""
 Date ""
 Rev ""
@@ -108,7 +108,7 @@ Wire Wire Line
 	4600 4700 4600 4600
 Connection ~ 4600 4200
 Text Notes 4700 1050 0    60   ~ 0
-Main 7V digital power supply
+Main 3.3V digital power supply
 Text Notes 3950 4900 0    60   ~ 0
 Analog voltage reference (VPP / 2)
 Wire Wire Line
@@ -137,7 +137,7 @@ Text HLabel 8700 1900 2    50   Input ~ 0
 3V3_OUT
 Text HLabel 5100 4200 2    50   Input ~ 0
 VCOM
-Text HLabel 2300 4700 0    50   Input ~ 0
+Text HLabel 2600 4700 0    50   Input ~ 0
 GND_ANALOG
 $Comp
 L Device:CP C2204
@@ -188,9 +188,6 @@ F 3 "~" H 4600 4450 50  0001 C CNN
 $EndComp
 Connection ~ 7800 1900
 Wire Wire Line
-	2650 4700 2300 4700
-Connection ~ 2650 4700
-Wire Wire Line
 	5100 4200 4600 4200
 $Comp
 L Regulator_Switching:LM2674M-ADJ U2202
@@ -218,7 +215,7 @@ L Device:R R2206
 U 1 1 5E66CE78
 P 7400 2150
 F 0 "R2206" V 7480 2150 50  0000 C CNN
-F 1 "10k" V 7400 2150 50  0000 C CNN
+F 1 "82k" V 7400 2150 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 7330 2150 50  0001 C CNN
 F 3 "" H 7400 2150 50  0000 C CNN
 	1    7400 2150
@@ -229,7 +226,7 @@ L Device:R R2207
 U 1 1 5E66D9C7
 P 7400 2650
 F 0 "R2207" V 7480 2650 50  0000 C CNN
-F 1 "10k" V 7400 2650 50  0000 C CNN
+F 1 "47k" V 7400 2650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 7330 2650 50  0001 C CNN
 F 3 "" H 7400 2650 50  0000 C CNN
 	1    7400 2650
@@ -346,9 +343,9 @@ Connection ~ 1700 2000
 Wire Wire Line
 	1700 2000 1700 2100
 Wire Wire Line
-	1900 1500 2050 1500
+	1900 1500 2000 1500
 Wire Wire Line
-	1050 2500 1700 2500
+	1050 2500 1250 2500
 Wire Wire Line
 	1700 2400 1700 2500
 Connection ~ 1700 2500
@@ -408,10 +405,6 @@ F 3 "~" H 4450 1850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4150 1500 4450 1500
-Wire Wire Line
-	3000 3500 2050 3500
-Wire Wire Line
-	2050 3500 2050 1500
 Connection ~ 3000 3500
 Wire Wire Line
 	3350 1500 4150 1500
@@ -451,7 +444,6 @@ F 4 "SLF7045T-221MR33-PF" H 3100 1500 60  0001 C CNN "Supplier reference"
 $EndComp
 Wire Wire Line
 	2850 1500 2650 1500
-Connection ~ 2050 1500
 $Comp
 L Device:CP C2201
 U 1 1 5E9313CF
@@ -467,10 +459,138 @@ Wire Wire Line
 	2650 1750 2650 1500
 Connection ~ 2650 1500
 Wire Wire Line
-	2650 1500 2050 1500
-Wire Wire Line
 	2650 2050 2650 2500
 Connection ~ 2650 2500
 Wire Wire Line
 	2650 2500 4150 2500
+Text Notes 6900 1150 0    50   ~ 0
+Vout = Vref * (1 + R1/R2) with Vref = 1.21V\nR1 = 82k, R2 = 47k -> Vout = 3.321V
+$Comp
+L Regulator_Linear:LM78L05_SO8 U2203
+U 1 1 5F125F0F
+P 3300 6000
+F 0 "U2203" H 3300 6242 50  0000 C CNN
+F 1 "LM78L05_SO8" H 3300 6151 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3400 6200 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM78L05A.pdf" H 3500 6000 50  0001 C CNN
+	1    3300 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2211
+U 1 1 5F1281A1
+P 2000 6250
+F 0 "C2211" H 2050 6350 50  0000 L CNN
+F 1 "100uF/25V" H 1450 6200 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x4.5" H 2038 6100 50  0001 C CNN
+F 3 "~" H 2000 6250 50  0001 C CNN
+	1    2000 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2213
+U 1 1 5F12A37F
+P 4000 6250
+F 0 "C2213" V 4252 6250 50  0000 C CNN
+F 1 "100nF" V 4161 6250 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" H 4038 6100 50  0001 C CNN
+F 3 "~" H 4000 6250 50  0001 C CNN
+	1    4000 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5F13D27B
+P 4500 6250
+AR Path="/5DE4AD88/5DF28E5E/5F13D27B" Ref="C?"  Part="1" 
+AR Path="/5DE4AD88/5ED499CE/5F13D27B" Ref="C?"  Part="1" 
+AR Path="/5E2FAB43/5F13D27B" Ref="C2214"  Part="1" 
+F 0 "C2214" H 4618 6296 50  0000 L CNN
+F 1 "10u" H 4618 6205 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x4.5" H 4538 6100 50  0001 C CNN
+F 3 "~" H 4500 6250 50  0001 C CNN
+	1    4500 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 6000 4000 6000
+Wire Wire Line
+	4000 6000 4000 6100
+Wire Wire Line
+	4000 6000 4500 6000
+Wire Wire Line
+	4500 6000 4500 6100
+Connection ~ 4000 6000
+Wire Wire Line
+	3300 6300 3300 6500
+Wire Wire Line
+	3300 6500 4000 6500
+Wire Wire Line
+	4000 6500 4000 6400
+Wire Wire Line
+	4500 6400 4500 6500
+Wire Wire Line
+	4500 6500 4000 6500
+Connection ~ 4000 6500
+Wire Wire Line
+	2000 6500 2000 6400
+Wire Wire Line
+	2500 6000 2000 6000
+Wire Wire Line
+	2000 6000 2000 6100
+$Comp
+L Device:C C2212
+U 1 1 5F1515BD
+P 2500 6250
+F 0 "C2212" V 2752 6250 50  0000 C CNN
+F 1 "100nF" V 2661 6250 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" H 2538 6100 50  0001 C CNN
+F 3 "~" H 2500 6250 50  0001 C CNN
+	1    2500 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 6100 2500 6000
+Wire Wire Line
+	3000 6000 2500 6000
+Connection ~ 2500 6000
+Wire Wire Line
+	2500 6400 2500 6500
+Connection ~ 2500 6500
+Wire Wire Line
+	2500 6500 2000 6500
+Wire Wire Line
+	2500 6500 3300 6500
+Connection ~ 3300 6500
+Connection ~ 2000 1500
+Wire Wire Line
+	2000 1500 2650 1500
+Wire Wire Line
+	2000 1500 2000 3500
+Wire Wire Line
+	2000 3500 3000 3500
+Connection ~ 2000 3500
+Wire Wire Line
+	2000 3500 2000 6000
+Connection ~ 2000 6000
+Wire Wire Line
+	1250 2500 1250 6500
+Wire Wire Line
+	1250 6500 2000 6500
+Connection ~ 1250 2500
+Wire Wire Line
+	1250 2500 1700 2500
+Connection ~ 2000 6500
+Wire Wire Line
+	2650 4700 2600 4700
+Connection ~ 2650 4700
+Text HLabel 5000 6000 2    50   Input ~ 0
+5V_OUT
+Wire Wire Line
+	5000 6000 4500 6000
+Connection ~ 4500 6000
+Text Notes 9050 2250 0    50   ~ 0
+3.3V for MCU + peripherals
+Text Notes 5400 6350 0    50   ~ 0
+5V for specific 5V logic\nMIDI
 $EndSCHEMATC

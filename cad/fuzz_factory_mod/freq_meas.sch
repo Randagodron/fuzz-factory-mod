@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 20 30
+Sheet 20 22
 Title ""
 Date ""
 Rev ""
@@ -458,4 +458,6 @@ Wire Wire Line
 Connection ~ 2100 5600
 Wire Wire Line
 	2100 5600 2100 5000
+Text Notes 3200 3550 0    50   ~ 0
+LM2903 : differencial comparator\nOpen-collector output
 $EndSCHEMATC

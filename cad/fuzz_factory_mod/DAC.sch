@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 14 30
+Sheet 17 22
 Title ""
 Date ""
 Rev ""
@@ -1317,4 +1317,12 @@ Wire Wire Line
 	6850 2000 6850 2900
 Wire Wire Line
 	6950 2400 6950 1800
+Text Notes 3900 800  0    50   ~ 0
+CD4054\nFor Vcc = 5V, Vdd = 10V, Vih is given at 2V < 3.3V -> Vih OK @ 3.3V\nSelect / EN : TTL-CMOS -> tied to VCC\nSupply voltage : Vdd = 5V min
+Text Notes 9150 600  0    50   ~ 0
+4049/4050 operating voltage : 3V-18V
+Text Notes 10100 4300 0    50   ~ 0
+Rail-to-rail OPA required
+Text Notes 4750 1700 0    50   ~ 0
+DNP
 $EndSCHEMATC

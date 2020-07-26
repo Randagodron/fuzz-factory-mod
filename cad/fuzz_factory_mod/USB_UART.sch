@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 30
+Sheet 3 22
 Title ""
 Date ""
 Rev ""
@@ -202,17 +202,6 @@ F 1 "10n" H 3815 4705 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 3738 4600 50  0001 C CNN
 F 3 "~" H 3700 4750 50  0001 C CNN
 	1    3700 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C303
-U 1 1 5EB155B4
-P 4500 2250
-F 0 "C303" H 4618 2296 50  0000 L CNN
-F 1 "4u7" H 4618 2205 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_6.3x4.5" H 4538 2100 50  0001 C CNN
-F 3 "~" H 4500 2250 50  0001 C CNN
-	1    4500 2250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -434,4 +423,17 @@ Wire Wire Line
 	3800 3450 4000 3450
 Wire Wire Line
 	3800 3550 4500 3550
+Text Notes 7550 3850 0    50   ~ 0
+IC supplied by host through USB\nNo power supply required from board
+$Comp
+L Device:C C303
+U 1 1 5F265772
+P 4500 2250
+F 0 "C303" H 4615 2296 50  0000 L CNN
+F 1 "4u7" H 4615 2205 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 4538 2100 50  0001 C CNN
+F 3 "~" H 4500 2250 50  0001 C CNN
+	1    4500 2250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
