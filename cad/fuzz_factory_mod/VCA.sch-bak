@@ -198,7 +198,7 @@ AR Path="/5DE4AD88/5E6E7BE0/5E6FDD1C/5E3514EA" Ref="RV?"  Part="1"
 AR Path="/5DE4AD88/5E6FC466/5E3514EA" Ref="RV1301"  Part="1" 
 F 0 "RV1301" V 5385 2300 50  0000 C CNN
 F 1 "R_POT_TRIM" V 5294 2300 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3266X" H 5500 2300 50  0001 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Piher_PT-10v10_Horizontal_Px10.0mm_Py5.0mm" H 5500 2300 50  0001 C CNN
 F 3 "~" H 5500 2300 50  0001 C CNN
 	1    5500 2300
 	0    -1   -1   0   

@@ -358,30 +358,6 @@ F 3 "~" H 5200 4450 50  0001 C CNN
 	1    5200 4450
 	1    0    0    -1  
 $EndComp
-Text Label 2450 5050 2    50   ~ 0
-VOLUME_POT_1
-Text Label 2450 5150 2    50   ~ 0
-VOLUME_POT_2
-Text Label 2450 5250 2    50   ~ 0
-VOLUME_POT_3
-Text Label 4900 5050 2    50   ~ 0
-VOLUME_POT_REF_1
-Text Label 4900 5150 2    50   ~ 0
-VOLUME_POT_REF_2
-Text Label 4900 5250 2    50   ~ 0
-VOLUME_POT_REF_3
-Wire Wire Line
-	4150 5050 5000 5050
-Wire Wire Line
-	4150 5150 5000 5150
-Wire Wire Line
-	4150 5250 5000 5250
-Wire Wire Line
-	1900 5050 2500 5050
-Wire Wire Line
-	1900 5150 2500 5150
-Wire Wire Line
-	1900 5250 2500 5250
 $Comp
 L power:GNDD #PWR?
 U 1 1 5EE6EE0E
@@ -513,4 +489,10 @@ Wire Wire Line
 	2500 6700 2500 7100
 Wire Wire Line
 	2500 7100 2000 7100
+NoConn ~ 2500 5050
+NoConn ~ 2500 5150
+NoConn ~ 2500 5250
+NoConn ~ 5000 5050
+NoConn ~ 5000 5150
+NoConn ~ 5000 5250
 $EndSCHEMATC

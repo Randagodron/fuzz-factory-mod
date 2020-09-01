@@ -210,7 +210,7 @@ U 1 1 5F1E2A93
 P 4900 3050
 F 0 "RV103" V 4693 3050 50  0000 C CNN
 F 1 "TRIM_GATE" V 4784 3050 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3339P_Horizontal" H 4900 3050 50  0001 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Piher_PT-10v10_Horizontal_Px10.0mm_Py5.0mm" H 4900 3050 50  0001 C CNN
 F 3 "~" H 4900 3050 50  0001 C CNN
 	1    4900 3050
 	0    1    1    0   
@@ -231,7 +231,7 @@ U 1 1 5F1E5897
 P 8900 3050
 F 0 "RV106" V 8693 3050 50  0000 C CNN
 F 1 "TRIM_GATE_REF" V 8784 3050 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3339P_Horizontal" H 8900 3050 50  0001 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Piher_PT-10v10_Horizontal_Px10.0mm_Py5.0mm" H 8900 3050 50  0001 C CNN
 F 3 "~" H 8900 3050 50  0001 C CNN
 	1    8900 3050
 	0    1    1    0   
@@ -266,7 +266,7 @@ U 1 1 5F1ED58F
 P 4900 2350
 F 0 "RV102" V 4693 2350 50  0000 C CNN
 F 1 "TRIM_COMP" V 4784 2350 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3339P_Horizontal" H 4900 2350 50  0001 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Piher_PT-10v10_Horizontal_Px10.0mm_Py5.0mm" H 4900 2350 50  0001 C CNN
 F 3 "~" H 4900 2350 50  0001 C CNN
 	1    4900 2350
 	0    1    1    0   
@@ -294,7 +294,7 @@ U 1 1 5F1F03DA
 P 8900 2350
 F 0 "RV105" V 8693 2350 50  0000 C CNN
 F 1 "TRIM_COMP_REF" V 8784 2350 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3339P_Horizontal" H 8900 2350 50  0001 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Piher_PT-10v10_Horizontal_Px10.0mm_Py5.0mm" H 8900 2350 50  0001 C CNN
 F 3 "~" H 8900 2350 50  0001 C CNN
 	1    8900 2350
 	0    1    1    0   
@@ -322,7 +322,7 @@ U 1 1 5F1FFBAF
 P 4900 1650
 F 0 "RV101" V 4693 1650 50  0000 C CNN
 F 1 "TRIM_VOLUME" V 4784 1650 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3339P_Horizontal" H 4900 1650 50  0001 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Piher_PT-10v10_Horizontal_Px10.0mm_Py5.0mm" H 4900 1650 50  0001 C CNN
 F 3 "~" H 4900 1650 50  0001 C CNN
 	1    4900 1650
 	0    1    1    0   
@@ -353,7 +353,7 @@ U 1 1 5F1D8129
 P 8900 1650
 F 0 "RV104" V 8693 1650 50  0000 C CNN
 F 1 "TRIM_VOLUME_REF" V 8784 1650 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3339P_Horizontal" H 8900 1650 50  0001 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Piher_PT-10v10_Horizontal_Px10.0mm_Py5.0mm" H 8900 1650 50  0001 C CNN
 F 3 "~" H 8900 1650 50  0001 C CNN
 	1    8900 1650
 	0    1    1    0   
