@@ -339,7 +339,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 3950 6200 4200
 Text HLabel 2350 5800 0    50   Input ~ 0
-+5V
++5V_IN
 Text Label 2500 5800 0    50   ~ 0
 +5V
 Wire Wire Line
