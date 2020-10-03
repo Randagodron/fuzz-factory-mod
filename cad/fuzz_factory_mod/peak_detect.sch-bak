@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:fuzz_factory_mod-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 19 22
+Sheet 18 22
 Title ""
 Date ""
 Rev ""
@@ -680,21 +679,6 @@ Wire Wire Line
 	8300 3000 8200 3000
 Wire Wire Line
 	8200 3000 8200 3200
-$Comp
-L Device:R R1109
-U 1 1 5E6DCF38
-P 7650 3000
-AR Path="/5DE4AD88/5E68EE8E/5E6DCF38" Ref="R1109"  Part="1" 
-AR Path="/5DE4AD88/5EB8346E/5E6DCF38" Ref="R1509"  Part="1" 
-AR Path="/5DE4AD88/5EE3A0D9/5E6DCF38" Ref="R1711"  Part="1" 
-AR Path="/5DE4AD88/5EE3A870/5E6DCF38" Ref="R1827"  Part="1" 
-F 0 "R1827" V 7550 2950 50  0000 C CNN
-F 1 "10k" V 7750 3000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 7580 3000 50  0001 C CNN
-F 3 "~" H 7650 3000 50  0001 C CNN
-	1    7650 3000
-	0    1    1    0   
-$EndComp
 Connection ~ 8200 3000
 $Comp
 L power:+9V #PWR01108
@@ -971,4 +955,19 @@ Wire Wire Line
 Connection ~ 8800 3000
 Wire Wire Line
 	8800 3000 8700 3000
+$Comp
+L Device:R R1318
+U 1 1 5F717D12
+P 7650 3000
+AR Path="/5DE4AD88/5E68EE8E/5F717D12" Ref="R1318"  Part="1" 
+AR Path="/5DE4AD88/5EB8346E/5F717D12" Ref="R1601"  Part="1" 
+AR Path="/5DE4AD88/5EE3A0D9/5F717D12" Ref="R1801"  Part="1" 
+AR Path="/5DE4AD88/5EE3A870/5F717D12" Ref="R1901"  Part="1" 
+F 0 "R1901" V 7550 2950 50  0000 C CNN
+F 1 "10k" V 7750 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7580 3000 50  0001 C CNN
+F 3 "~" H 7650 3000 50  0001 C CNN
+	1    7650 3000
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:fuzz_factory_mod-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1195,4 +1194,16 @@ Wire Wire Line
 	1100 7000 1200 7000
 Wire Wire Line
 	2600 7000 2700 7000
+Text Label 10100 5700 2    50   ~ 0
+USART1_RX
+Text Label 5450 2650 0    50   ~ 0
+USART1_TX
+Wire Wire Line
+	5350 2650 6500 2650
+Text Label 10100 5800 2    50   ~ 0
+USART1_TX
+Wire Wire Line
+	10200 5800 9650 5800
+Wire Wire Line
+	10200 5700 9650 5700
 $EndSCHEMATC

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:fuzz_factory_mod-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,9 +14,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Interface_USB:FT230XS U302
+L fuzz_factory_mod-rescue:FT230XS-Interface_USB U302
 U 1 1 5EB01C76
 P 6050 3550
+AR Path="/5EB01C76" Ref="U302"  Part="1" 
+AR Path="/5DE4AD26/5EB00B3E/5EB01C76" Ref="U302"  Part="1" 
 F 0 "U302" H 5550 4150 50  0000 C CNN
 F 1 "FT230XS" H 6400 2950 50  0000 C CNN
 F 2 "Housings_SSOP:SSOP-16_3.9x4.9mm_Pitch0.635mm" H 6500 2900 50  0001 C CNN
@@ -354,7 +355,7 @@ USB_RXD
 Text HLabel 8000 3150 2    50   Input ~ 0
 USB_TXD
 $Comp
-L Power_Protection:USBLC6-2SC6 U301
+L fuzz_factory_mod-rescue:USBLC6-2SC6-Power_Protection U301
 U 1 1 5EB33269
 P 2850 3500
 F 0 "U301" V 2500 3750 50  0000 C CNN

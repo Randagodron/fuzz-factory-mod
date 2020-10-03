@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:fuzz_factory_mod-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 17 22
+Sheet 10 22
 Title ""
 Date ""
 Rev ""
@@ -659,47 +658,10 @@ F 3 "" H 9750 2700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9750 2700 9750 2800
-$Comp
-L Device:CP C605
-U 1 1 5DF69CF1
-P 9350 3550
-AR Path="/5DE4AD88/5DF28E5E/5DF69CF1" Ref="C605"  Part="1" 
-AR Path="/5DE4AD88/5ED499CE/5DF69CF1" Ref="C1611"  Part="1" 
-F 0 "C1611" H 9468 3596 50  0000 L CNN
-F 1 "10u" H 9468 3505 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_6.3x4.5" H 9388 3400 50  0001 C CNN
-F 3 "~" H 9350 3550 50  0001 C CNN
-	1    9350 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR0618
-U 1 1 5DF6A58E
-P 9350 3800
-AR Path="/5DE4AD88/5DF28E5E/5DF6A58E" Ref="#PWR0618"  Part="1" 
-AR Path="/5DE4AD88/5ED499CE/5DF6A58E" Ref="#PWR0144"  Part="1" 
-F 0 "#PWR0144" H 9350 3550 50  0001 C CNN
-F 1 "GNDA" H 9355 3627 50  0000 C CNN
-F 2 "" H 9350 3800 50  0001 C CNN
-F 3 "" H 9350 3800 50  0001 C CNN
-	1    9350 3800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9750 3100 9750 3200
 Wire Wire Line
 	9750 3700 9750 3800
-Wire Wire Line
-	9750 3200 9750 3300
-Wire Wire Line
-	9350 3400 9350 3300
-Wire Wire Line
-	9350 3300 9750 3300
-Connection ~ 9750 3300
-Wire Wire Line
-	9750 3300 9750 3400
-Wire Wire Line
-	9350 3700 9350 3800
 Wire Wire Line
 	9750 4850 9650 4850
 Wire Wire Line
@@ -1325,4 +1287,6 @@ Text Notes 10100 4300 0    50   ~ 0
 Rail-to-rail OPA required
 Text Notes 4750 1700 0    50   ~ 0
 DNP
+Wire Wire Line
+	9750 3200 9750 3400
 $EndSCHEMATC

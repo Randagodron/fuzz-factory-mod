@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:fuzz_factory_mod-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -159,7 +158,7 @@ Connection ~ 3700 2850
 Wire Wire Line
 	3700 2850 3700 2800
 $Comp
-L Power_Protection:USBLC6-2SC6 U?
+L fuzz_factory_mod-rescue:USBLC6-2SC6-Power_Protection U?
 U 1 1 5EB62ACF
 P 5200 3250
 AR Path="/5DE4AD26/5EB00B3E/5EB62ACF" Ref="U?"  Part="1" 

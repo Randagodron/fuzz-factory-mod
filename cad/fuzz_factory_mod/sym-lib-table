@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name fuzz_factory_mod-rescue)(type Legacy)(uri ${KIPRJMOD}/fuzz_factory_mod-rescue.lib)(options "")(descr ""))
+)

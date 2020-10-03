@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:fuzz_factory_mod-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -162,28 +161,6 @@ F 1 "100uF/25V" H 7918 2155 50  0000 L CNN
 F 2 "Capacitors_SMD:CP_Elec_6.3x4.5" H 7838 2050 50  0001 C CNN
 F 3 "~" H 7800 2200 50  0001 C CNN
 	1    7800 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C2202
-U 1 1 5E30AEA4
-P 2650 4450
-F 0 "C2202" H 2700 4550 50  0000 L CNN
-F 1 "100uF/25V" H 2200 4350 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_6.3x4.5" H 2688 4300 50  0001 C CNN
-F 3 "~" H 2650 4450 50  0001 C CNN
-	1    2650 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C2206
-U 1 1 5E30B79A
-P 4600 4450
-F 0 "C2206" H 4718 4496 50  0000 L CNN
-F 1 "100uF/25V" H 4718 4405 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_6.3x4.5" H 4638 4300 50  0001 C CNN
-F 3 "~" H 4600 4450 50  0001 C CNN
-	1    4600 4450
 	1    0    0    -1  
 $EndComp
 Connection ~ 7800 1900
@@ -477,17 +454,6 @@ F 3 "http://www.fairchildsemi.com/ds/LM/LM78L05A.pdf" H 3500 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C2211
-U 1 1 5F1281A1
-P 2000 6250
-F 0 "C2211" H 2050 6350 50  0000 L CNN
-F 1 "100uF/25V" H 1450 6200 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_6.3x4.5" H 2038 6100 50  0001 C CNN
-F 3 "~" H 2000 6250 50  0001 C CNN
-	1    2000 6250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C2213
 U 1 1 5F12A37F
 P 4000 6250
@@ -507,7 +473,7 @@ AR Path="/5DE4AD88/5ED499CE/5F13D27B" Ref="C?"  Part="1"
 AR Path="/5E2FAB43/5F13D27B" Ref="C2214"  Part="1" 
 F 0 "C2214" H 4618 6296 50  0000 L CNN
 F 1 "10u" H 4618 6205 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_6.3x4.5" H 4538 6100 50  0001 C CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.8" H 4538 6100 50  0001 C CNN
 F 3 "~" H 4500 6250 50  0001 C CNN
 	1    4500 6250
 	1    0    0    -1  
@@ -593,4 +559,46 @@ Text Notes 9050 2250 0    50   ~ 0
 3.3V for MCU + peripherals
 Text Notes 5400 6350 0    50   ~ 0
 5V for specific 5V logic\nMIDI
+$Comp
+L Device:CP C?
+U 1 1 5F8085AA
+P 2650 4450
+AR Path="/5DE4AD88/5DF28E5E/5F8085AA" Ref="C?"  Part="1" 
+AR Path="/5DE4AD88/5ED499CE/5F8085AA" Ref="C?"  Part="1" 
+AR Path="/5E2FAB43/5F8085AA" Ref="C2202"  Part="1" 
+F 0 "C2202" H 2768 4496 50  0000 L CNN
+F 1 "10u" H 2768 4405 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.8" H 2688 4300 50  0001 C CNN
+F 3 "~" H 2650 4450 50  0001 C CNN
+	1    2650 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5F823635
+P 2000 6250
+AR Path="/5DE4AD88/5DF28E5E/5F823635" Ref="C?"  Part="1" 
+AR Path="/5DE4AD88/5ED499CE/5F823635" Ref="C?"  Part="1" 
+AR Path="/5E2FAB43/5F823635" Ref="C?"  Part="1" 
+F 0 "C?" H 2118 6296 50  0000 L CNN
+F 1 "10u" H 2118 6205 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.8" H 2038 6100 50  0001 C CNN
+F 3 "~" H 2000 6250 50  0001 C CNN
+	1    2000 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5F8237A2
+P 4600 4450
+AR Path="/5DE4AD88/5DF28E5E/5F8237A2" Ref="C?"  Part="1" 
+AR Path="/5DE4AD88/5ED499CE/5F8237A2" Ref="C?"  Part="1" 
+AR Path="/5E2FAB43/5F8237A2" Ref="C?"  Part="1" 
+F 0 "C?" H 4718 4496 50  0000 L CNN
+F 1 "10u" H 4718 4405 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.8" H 4638 4300 50  0001 C CNN
+F 3 "~" H 4600 4450 50  0001 C CNN
+	1    4600 4450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
