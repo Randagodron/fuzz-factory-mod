@@ -714,16 +714,12 @@ Wire Wire Line
 	2500 3550 3750 3550
 Wire Wire Line
 	2500 3450 3750 3450
-Text Label 5450 4050 0    50   ~ 0
-ENC2_IN_CCW
 Text Label 5450 3950 0    50   ~ 0
 SPI3_MOSI
 Wire Wire Line
 	6500 3950 5350 3950
-Wire Wire Line
-	6500 4050 5350 4050
 Text Label 3650 5850 2    50   ~ 0
-ENC2_IN_CW
+ENC2_IN_CCW
 Text Label 3650 5750 2    50   ~ 0
 ENC2_BTN
 Text Label 3650 5650 2    50   ~ 0

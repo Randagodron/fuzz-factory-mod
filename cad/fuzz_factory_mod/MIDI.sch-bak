@@ -327,13 +327,13 @@ $EndComp
 Wire Wire Line
 	4800 5600 4700 5600
 Text Label 4300 5500 1    50   ~ 0
-+5V
++5V_IN
 Wire Wire Line
 	4300 5400 4300 5600
 Text Label 6200 4100 1    50   ~ 0
-+5V
++5V_IN
 Text Label 9200 2900 1    50   ~ 0
-+5V
++5V_IN
 Wire Wire Line
 	9200 2750 9200 3000
 Wire Wire Line
@@ -341,11 +341,11 @@ Wire Wire Line
 Text HLabel 2350 5800 0    50   Input ~ 0
 +5V_IN
 Text Label 2500 5800 0    50   ~ 0
-+5V
++5V_IN
 Wire Wire Line
 	2350 5800 2750 5800
 Text Label 3800 3800 1    50   ~ 0
-+5V
++5V_IN
 Wire Wire Line
 	3800 3600 3800 3900
 Text Notes 4900 6300 0    50   ~ 0
