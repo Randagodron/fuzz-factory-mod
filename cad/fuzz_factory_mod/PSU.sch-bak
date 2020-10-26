@@ -601,4 +601,6 @@ F 3 "~" H 4600 4450 50  0001 C CNN
 	1    4600 4450
 	1    0    0    -1  
 $EndComp
+Text Label 6000 1900 0    50   ~ 0
+DCDC_VSW
 $EndSCHEMATC
