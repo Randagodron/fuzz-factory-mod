@@ -1,4 +1,4 @@
-241902692485213
+251960306801172
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -39808,24 +39808,66 @@ pot_bourns_TC33
 0
 3
 3
-logo
-electrologo
+teensy
+Teensy1.0
+11
+
+0
+27
+27
+teensy
+Teensy1.0++
+20
+
+0
+51
+51
+teensy
+Teensy2.0
+11
+
+0
+31
+31
+teensy
+Teensy2.0++
+20
+
+0
+52
+52
+teensy
+Teensy30_31_32_LC
 
 
 0
-0
-0
-logo
-logo
+39
+38
+teensy
+Teensy35_36
 
 
 0
-0
-0
-logo
-qrcode
+62
+62
+teensy
+Teensy40
 
 
 0
+44
+44
+teensy
+Teensy40_SMT
+
+
 0
+54
+54
+teensy
+Teensy41
+
+
 0
+67
+67
