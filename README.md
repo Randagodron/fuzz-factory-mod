@@ -23,6 +23,19 @@ This circuit is an experimentation platform around the Fuzz Face / Tonebender fu
 * MIDI support
 * ...
 
+# Contents
+
+* Circuit CAD : Kicad
+* Simulation : LTSpice
+* SW : STM32CubeIDE
+
+# Directory structure
+
+* /cad : Kicad files
+* /sim : simulation files
+* /sw : software files
+* /export : binaries and Kicad outputs
+
 # Companion articles (in french)
 
 http://blog.randagodron.eu/index.php?post/2019/05/26/Fuzzquest-Episode-2  
