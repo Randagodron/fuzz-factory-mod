@@ -26,13 +26,15 @@ This circuit is an experimentation platform around the Fuzz Face / Tonebender fu
 # Contents
 
 * Circuit CAD : Kicad
+* Mechanics : FreeCAD
 * Simulation : LTSpice
 * SW : STM32CubeIDE
 
 # Directory structure
 
 * /cad : Kicad files
-* /sim : simulation files
+* /sim : electronics simulation files
+* /mec : mechanical files
 * /sw : software files
 * /export : binaries and Kicad outputs
 
